@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">geoarrow</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.1.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,8 +33,21 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="development version" id="geoarrow-development-version">geoarrow (development version)<a class="anchor" aria-label="anchor" href="#geoarrow-development-version"></a></h2>
-</div>
+<h2 class="pkg-version" data-toc-text="0.4.0" id="geoarrow-040">geoarrow 0.4.0<a class="anchor" aria-label="anchor" href="#geoarrow-040"></a></h2><p class="text-muted">CRAN release: 2025-09-21</p>
+<ul><li>When converting sf objects to geoarrow, an optional geometry vctr type can now be specified (e.g., to force geoarrow.wkb output) (<a href="https://github.com/geoarrow/geoarrow-r/issues/71" class="external-link">#71</a>).</li>
+<li>The internal vendored copies of geoarrow-c and nanoarrow were updated (<a href="https://github.com/geoarrow/geoarrow-r/issues/72" class="external-link">#72</a>).</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.3.0" id="geoarrow-030">geoarrow 0.3.0<a class="anchor" aria-label="anchor" href="#geoarrow-030"></a></h2><p class="text-muted">CRAN release: 2025-05-26</p>
+<ul><li>Add support for the <code>geoarrow.box</code> type with conversions to and from <code><a href="https://paleolimbot.github.io/wk/reference/rct.html" class="external-link">wk::rct()</a></code> (<a href="https://github.com/geoarrow/geoarrow-r/issues/59" class="external-link">#59</a>).</li>
+<li>Implement <code><a href="https://paleolimbot.github.io/wk/reference/wk_crs.html" class="external-link">wk::wk_set_crs()</a></code> and <code><a href="https://paleolimbot.github.io/wk/reference/wk_is_geodesic.html" class="external-link">wk::wk_set_geodesic()</a></code> for the <code>geoarrow_vctr</code> class (<a href="https://github.com/geoarrow/geoarrow-r/issues/61" class="external-link">#61</a>).</li>
+<li>Fix conversion of empty <code><a href="https://r-spatial.github.io/sf/reference/st_crs.html" class="external-link">sf::st_crs()</a></code> to GeoArrow CRS (<a href="https://github.com/geoarrow/geoarrow-r/issues/60" class="external-link">#60</a>).</li>
+<li>The <code>geoarrow_vctr</code> can now be rearranged and subset with a non-slice range when the arrow package is installed (<a href="https://github.com/geoarrow/geoarrow-r/issues/62" class="external-link">#62</a>).</li>
+<li>The R package now supports extra metadata features that were introduced in the GeoArrow 0.2 specification, including non-PROJJSON CRS types and spheroidal edge interpolations (<a href="https://github.com/geoarrow/geoarrow-r/issues/57" class="external-link">#57</a>, <a href="https://github.com/geoarrow/geoarrow-r/issues/65" class="external-link">#65</a>).</li>
+<li>
+<code>geoarrow.wkb</code> and <code>geoarrow.wkt</code> extension types now support binary view and string view storage types, respectively (<a href="https://github.com/geoarrow/geoarrow-r/issues/66" class="external-link">#66</a>).</li>
+<li>Internal versions of geoarrow-c, nanoarrow, and fast_float were updated (<a href="https://github.com/geoarrow/geoarrow-r/issues/64" class="external-link">#64</a>).</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.2.1" id="geoarrow-021">geoarrow 0.2.1<a class="anchor" aria-label="anchor" href="#geoarrow-021"></a></h2><p class="text-muted">CRAN release: 2024-06-13</p>
 <ul><li>Fix undefined behaviour identified by UBSAN (<a href="https://github.com/geoarrow/geoarrow-r/issues/44" class="external-link">#44</a>).</li>
@@ -52,7 +65,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
 </div>
 
     </footer></div>
